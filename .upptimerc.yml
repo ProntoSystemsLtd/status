@@ -39,7 +39,6 @@ skipTopicsUpdate: true
 skipHomepageUpdate: true
 
 status-website:
-  # Until DNS for status.prontosystems.co.uk exists, the site is served at
   cname: status.prontosystems.co.uk
   name: Pronto Systems
   logoUrl: https://status.prontosystems.co.uk/pronto-mark.svg
