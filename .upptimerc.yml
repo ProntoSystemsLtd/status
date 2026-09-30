@@ -1,31 +1,59 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+# Pronto Systems status page — https://github.com/ProntoSystemsLtd/status
+# Edit this file and push; the Setup CI workflow rebuilds everything.
+# Docs: https://upptime.js.org/docs/configuration
+owner: ProntoSystemsLtd
+repo: status
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Secret Site
-    url: $SECRET_SITE
+  - name: Pronto Systems website
+    slug: pronto-systems-website
+    url: https://prontosystems.co.uk/
+  - name: Pronto Training website
+    slug: pronto-training-website
+    url: https://trainpronto.com/
+  - name: Book Pronto website
+    slug: book-pronto-website
+    url: https://bookpronto.com/
+  - name: Management app (TMS)
+    slug: management-app
+    url: https://config.trainpronto.com/
+  - name: Online booking
+    slug: online-booking
+    url: https://smithstraining.trainpronto.com/
+  - name: API
+    slug: api
+    url: https://api.trainpronto.com/health
+  - name: Training tablet service
+    slug: training-service
+    url: https://training.trainpronto.com/health
+  - name: Support portal
+    slug: support-portal
+    url: https://support.prontosystems.co.uk/
+
+# No alerting is configured. Down/up events open/close GitHub Issues in this repo only.
+# To add owner-only alerts later, see https://upptime.js.org/docs/notifications
+
+# The default GITHUB_TOKEN cannot edit repo metadata under the org's Actions policy.
+skipDescriptionUpdate: true
+skipTopicsUpdate: true
+skipHomepageUpdate: true
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  # Until DNS for status.prontosystems.co.uk exists, the site is served at
+  # https://prontosystemsltd.github.io/status/. To switch to the custom domain, replace
+  # the baseUrl line below with:   cname: status.prontosystems.co.uk
+  # and change the two prontosystemsltd.github.io/status URLs to https://status.prontosystems.co.uk
+  baseUrl: /status
+  name: Pronto Systems
+  logoUrl: https://prontosystemsltd.github.io/status/pronto-mark.svg
+  faviconSvg: https://prontosystemsltd.github.io/status/pronto-mark.svg
+  theme: light
+  introTitle: "**Pronto Systems** service status"
+  introMessage: Live availability and response times for Pronto Systems services, checked every 5 minutes. Past incidents are listed below.
   navbar:
     - title: Status
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
-# See https://upptime.js.org/docs/configuration
+    - title: Support
+      href: https://support.prontosystems.co.uk/
+    - title: prontosystems.co.uk
+      href: https://prontosystems.co.uk/
