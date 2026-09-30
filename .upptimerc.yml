@@ -40,13 +40,10 @@ skipHomepageUpdate: true
 
 status-website:
   # Until DNS for status.prontosystems.co.uk exists, the site is served at
-  # https://prontosystemsltd.github.io/status/. To switch to the custom domain, replace
-  # the baseUrl line below with:   cname: status.prontosystems.co.uk
-  # and change the two prontosystemsltd.github.io/status URLs to https://status.prontosystems.co.uk
-  baseUrl: /status
+  cname: status.prontosystems.co.uk
   name: Pronto Systems
-  logoUrl: https://prontosystemsltd.github.io/status/pronto-mark.svg
-  faviconSvg: https://prontosystemsltd.github.io/status/pronto-mark.svg
+  logoUrl: https://status.prontosystems.co.uk/pronto-mark.svg
+  faviconSvg: https://status.prontosystems.co.uk/pronto-mark.svg
   theme: light
   introTitle: "**Pronto Systems** service status"
   introMessage: Live availability and response times for Pronto Systems services, checked every 5 minutes. Past incidents are listed below.
