@@ -29,6 +29,9 @@ sites:
   - name: Support portal
     slug: support-portal
     url: https://support.prontosystems.co.uk/
+  - name: Pronto Connect (contact centre)
+    slug: pronto-connect
+    url: https://platform.prontosystems.co.uk/
 
 # No alerting is configured. Down/up events open/close GitHub Issues in this repo only.
 # To add owner-only alerts later, see https://upptime.js.org/docs/notifications
